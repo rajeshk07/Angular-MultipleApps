@@ -26,10 +26,10 @@ jobs:
           npm install
       - name: ng build exampleapp
         run: |
-          ng build --prod --project="exampleApp" 
+          npm run build exampleApp
       - name: ng build gettingStarted
         run: |
-          ng build --prod --project="gettingStarted"
+          npm run build gettingStarted
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
